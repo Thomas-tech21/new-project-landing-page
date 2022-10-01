@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body, html {
+    height: 100%;
+}
+
+html {
+    font-size: 16px;
+}
+
+#header {
+    width: 100vw;
+    height: 18vh;
+    background-color: #008000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+    .header-logo {
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: orangered;
+    margin-left: 20px;
+}
+
+ ul > li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 2em;
+}
+
+ul > li > a {
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+        color: lightblue;
+}
+
+#services-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./images/lawn.jpg");
+    height: 95vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 85px;
+    
+}
+
+.services-header {
+    font-size: 3.75rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+}
+
+.services-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.services-txt {
+    font-size: 2.85rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-align: center;
+    margin-top: -5%;
+}
+
+.service-div-wrapper {
+     height: 40%;
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     overflow: hidden;
+     
+    
+}
+
+.services-div {
+    width: 40%;
+    height: 95%;
+    background-color: #008000;
+    opacity: 0.8;
+    text-align: center;
+    border: 2px solid white;
+    
+}
+
+.services-div > h4 {
+      font-size: 2.2rem;
+      color: white;
+}
+
+.services-div > p {
+    font-size: 1.5rem;
+    color: white;
+}
+
+a > button {
+    width: 30%;
+    height: 16%;
+    font-size: 0.8rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    background-color: white; 
+    margin-top: 20%;
+    text-align: center;
+    cursor: pointer;
+    transition: 1s ease in out;
+    
+}
+
+a > button:hover {
+    background-color: lightblue;
+
+}
+
+#testimonial-section {
+    width: 100%;
+    height: 600px;
+    background-color: #f2f2f2;
+    position: relative;
+    top: 85px;
+    
+    
+}
+
+h3 {
+    font-size: 2.5em;
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#testimonial-section > p {
+    font-size: 1.8rem;
+    font-style: italic;
+    color: black;
+    text-align: center;
+    margin-top: 100px;
+}
+
+span {
+    font-size: 1.5rem;
+    font-weight: 800;
+    float: right;
+    margin-right: 150px;
+}
+
+#footer {
+    width: 100%;
+    height: 20%;
+    background-color: #1f2937;
+    position: relative;
+    top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#footer > p {
+       font-size: 1.5rem;
+       color: white;
+}
+
+form {
+    display: inline;
+}
+
+input {
+    margin-right: 1em;
+    height: 25px;
+    font-size: 1rem;
+}
+
+label {
+    font-size: 1.2rem;
+    color: white;
+}
+
+ select  {
+  height: 25px;
+  font-size: 1rem;
+  font-style: oblique;
+  border: none;
+}
+
+.footer-btn {
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-left: 20px;
+    border: none;
+    transition: 0.5s;
+}
+
+.footer-btn:hover {
+    background-color: lightblue;
+}
+
+@media (max-width: 800px) {
+   .services-txt {
+    font-size: 1.2rem;
+   }
+   .services-header {
+    font-size: 1.5rem;
+   }
+   .services-div > h4 {
+    font-size: 1.2rem;
+   }
+   .services-div > p {
+    font-size: 1rem;
+   }
+   a > button {
+    font-size: 0.5rem;
+    margin-top: 60%;
+   }
+   .header-logo {
+     font-size: 1rem;
+   }
+   ul > li {
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+   }
+   ul > li > a {
+     font-size: 1rem;
+      flex-direction: row;
+   }
+   #testimonial-section > p {
+    font-size: 1rem;
+   }
+   h3 {
+    font-size: 1.5rem;
+   }
+   form {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#footer > p {
+    font-size: 1rem;
+}
+input {
+    margin-right: 0.5em;
+    height: 15px;
+    font-size: 0.8rem;
+}
+label {
+    font-size: 0.8rem;
+}
+select {
+    height: 18px;
+    font-size: 0.8rem;
+}
+.footer-btn {
+    font-size: 0.8rem;
+    width: 80px;
+    height: 20px;
+    margin-top: 5px;
+}
+#footer {
+    height: 25%;
+}
+}
